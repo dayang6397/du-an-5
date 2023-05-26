@@ -1,0 +1,198 @@
+* {
+    box-sizing: border-box;
+}
+
+html {
+    font-size: 62.5%;
+}
+
+body {
+    font-size: 1.6rem;
+    font-family: "Poppins", sans-serif;
+    height: 6000px;
+}
+
+/* ========== dùng chung ========== */
+.container {
+    width: 1140px;
+    margin: 0 auto;
+}
+
+a {
+    text-decoration: none;
+}
+
+a:hover {
+    text-decoration: underline;
+}
+
+.btn {
+    text-align: center;
+    display: inline-block;
+    min-width: 173px;
+    line-height: 56px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    color: #ffffff;
+    background: #143c3c;
+    border: 1.5px solid #143c3c;
+    border-radius: 40px;
+}
+
+/* ============ header =========== */
+.header {
+    padding-top: 28px;
+    position: sticky;
+    top: -28px;
+    z-index: 1;
+}
+.header-body {
+    font-family: "Public Sans", sans-serif;
+    display: flex;
+    align-items: center;
+    padding: 8px 0;
+    background: #efefef;
+}
+
+.logo-img {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+}
+
+.logo-img__desc {
+    color: #152427;
+    font-size: 1.8rem;
+    font-weight: 600;
+}
+
+.navbar {
+    margin-left: auto;
+}
+
+.header-list {
+    display: flex;
+}
+
+.header-list__link {
+    padding: 8px 19px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #575d5e;
+    position: relative;
+}
+
+.header-list__link--home::after {
+    position: absolute;
+    left: 19px;
+    bottom: -26px;
+    content: "";
+    width: 16px;
+    height: 2px;
+    background: #143c3c;
+}
+
+.header-list__link:hover {
+    color: #152427;
+}
+
+.header-action__btn {
+    margin-left: 67px;
+}
+
+.header-zhixian {
+    margin-top: 5px;
+    width: 100%;
+    height: 1px;
+    background: linear-gradient(
+        90deg,
+        #ffffff 0%,
+        #dddcdc 51.09%,
+        rgba(213, 213, 213, 0) 99.68%
+    );
+}
+
+/* ============== hero ============== */
+.hero {
+    padding: 60px 0 88px;
+}
+
+.hero-body {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.hero-heading {
+    font-weight: 800;
+    font-size: 5rem;
+    line-height: 1.2;
+    color: #152427;
+}
+
+.hero-desc {
+    margin-top: 20px;
+    font-weight: 500;
+    font-size: 1.8rem;
+    line-height: 1.56;
+    color: #575d5e;
+}
+
+.hero-left__action {
+    margin-top: 42px;
+    display: flex;
+    align-items: center;
+}
+
+.hero-btn {
+    margin-right: 36px;
+}
+
+.hero-left__icon {
+    display: flex;
+}
+
+.hero-button {
+    background: transparent;
+    outline: none;
+    border: none;
+    font-weight: 600;
+    font-size: 1.8rem;
+    line-height: 1.67;
+    text-align: center;
+    color: #152427;
+}
+
+.hero-left__action .fa-solid {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    margin-right: 9px;
+    font-size: 1.2rem;
+    width: 43px;
+    height: 43px;
+    border-radius: 50%;
+    color: #fff;
+    background: #83a17d;
+    position: relative;
+}
+
+.hero-left__action .fa-solid::after {
+    position: absolute;
+    content: "";
+    width: 50px;
+    height: 50px;
+    border: 6px solid #143c3c;
+    border-radius: 50px;
+    /* border-right: 5px solid transparent; */
+    border-top: 5px solid transparent;
+    /* border-bottom: 5px solid transparent; */
+    animation: quay 2s infinite ease-in;
+}
+
+@keyframes quay {
+    to {
+        rotate: 360deg;
+    }
+}
