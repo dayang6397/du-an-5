@@ -124,14 +124,20 @@ a:hover {
     align-items: center;
 }
 
+.hero-left{
+    width: 35.8%;
+}
+
 .hero-heading {
+    width: 368px;
     font-weight: 800;
-    font-size: 5rem;
+    font-size: 4.3rem;
     line-height: 1.2;
     color: #152427;
 }
 
 .hero-desc {
+    width: 80%;
     margin-top: 20px;
     font-weight: 500;
     font-size: 1.8rem;
@@ -146,11 +152,12 @@ a:hover {
 }
 
 .hero-btn {
-    margin-right: 36px;
+    margin-right: 42px;
 }
 
 .hero-left__icon {
     display: flex;
+    gap: 15px;
 }
 
 .hero-button {
@@ -168,7 +175,6 @@ a:hover {
     display: flex;
     justify-content: center;
     align-items: center;
-    margin-right: 9px;
     font-size: 1.2rem;
     width: 43px;
     height: 43px;
@@ -188,7 +194,7 @@ a:hover {
     /* border-right: 5px solid transparent; */
     border-top: 5px solid transparent;
     /* border-bottom: 5px solid transparent; */
-    animation: quay 2s infinite ease-in;
+    animation: quay 3s infinite ease-in;
 }
 
 @keyframes quay {
