@@ -666,6 +666,9 @@ a:hover {
     display: flex;
     align-items: center;
     /* justify-content: space-between; */
+    position: relative;
+    padding: 57px 30px 76px;
+    transition: all 0.25s linear;
 }
 
 .step-tr:hover {
@@ -677,19 +680,22 @@ a:hover {
     display: block;
 }
 
-.step-tr td {
-    padding: 57px 30px 76px;
+.step-tr:hover .step-table__img{
+    overflow: inherit;
+    visibility: inherit;
 }
+
+/* .step-tr:hover .step-td__desc3{
+    visibility: hidden;
+    overflow: hidden;
+} */
 
 .step-td__so {
     font-weight: 600;
     font-size: 7.2rem;
     line-height: 0.72;
     color: #143c3c;
-}
-
-.step-td {
-    /* margin-left: -164px; */
+    margin-right: 64px;
 }
 
 .step-td__desc1 {
@@ -707,6 +713,7 @@ a:hover {
     line-height: 1;
     color: #575d5e;
     text-decoration: underline;
+    
 }
 
 .step-td__desc3 {
@@ -718,13 +725,15 @@ a:hover {
     color: #7d8188;
 }
 
-.step-table {
-    position: relative;
+.step-td__desc3_td1{
+    overflow: hidden;
+    visibility: hidden;
 }
 
 .step-table__img {
+    display: inline-block;
     z-index: 1;
-    /* position: absolute; */
+    position: absolute;
     width: 450px;
     height: 444px;
     object-fit: cover;
