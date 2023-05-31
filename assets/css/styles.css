@@ -1095,6 +1095,15 @@ a:hover {
     color: #6a8383;
 }
 
+/* .footer:focus-within {
+    color: red;
+    background: orange;
+} */
+
+/* main:has(h2){
+    background: orange;
+} */
+
 .footer-body__left .fa-solid {
     padding: 8px 15px;
     margin-left: -48px;
